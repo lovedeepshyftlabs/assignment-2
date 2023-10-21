@@ -42,6 +42,7 @@ export const LeftPortion = () => {
             helper([dropdown5, setDropdown5], refElement5, event.target);            
         }         
     }
+    
     return (
         <div className="left-portion">
             <div className="dropdown">
