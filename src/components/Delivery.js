@@ -6,9 +6,9 @@ import { Foot } from './Foot'
 export const Delivery = () => {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <DeliveryInfo />
-      <Foot />
+      {/* <Foot /> */}
     </>
   )
 }
