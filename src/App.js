@@ -1,18 +1,14 @@
 import './App.css'
-import { BreadCrumbs } from './components/Breadcrumbs';
-import { Foot } from './components/Foot';
-import { MainComponent } from './components/MainComponent';
-import {NavBar} from './components/NavBar'
-import { SlidesBtn } from './components/SlidesBtn';
-
+import { Homepage} from './components/Homepage';
+import { Delivery } from './components/Delivery';
+import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <>
-    <NavBar/>
-    <BreadCrumbs/>
-    <MainComponent/>   
-    <SlidesBtn/> 
-    <Foot/>    
+      <Routes>
+        <Route path='/' element={<Homepage />}></Route>
+        <Route path='/delivery' element={<Delivery />}></Route>
+      </Routes>
     </>
   );
 }
